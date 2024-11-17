@@ -1,4 +1,4 @@
-# Master Thesis
+# Master Thesis - work in progress
 Benchmarking existing state-of-the-art Bayesian methods (BPCRR and BayesR) for genomic prediction, investigating their performance across different genetic architectures.
 
 TODO: Explain or link references for BPCRR and BayesR.
