@@ -32,7 +32,7 @@ Contact stefamu@ntnu.no to download it.
 - BayesR.R: perform genomic prediction by BayesR
 - SVD.R: perform singular value decomposition of the SNP matrix to extract PCs.
 
-### Genomic prediction (and possibly additive variance estimation) using BPCRR and BayesR:
+### Genomic prediction (and possibly additive variance estimation) using BPCRR and BayesR
 - demo_sim.R: demonstration script (credits to janne.c.h.aspheim@ntnu.no). I recommend to give a look to this before using any other script
 - main.R: optimized script which runs several seeds for reliable predictions and creates .csv files to store the results so that we may directly use plot them for visual inspection
 - main_all_architectures.R: version of 'main.R' which performs genomic prediction for all the architectures set at the beginning. May require long time to run.
