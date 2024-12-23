@@ -23,7 +23,7 @@ BayesR uses MCMC to sample from the full posterior of **u**, and follows a two-s
 The dataset, "SNP_100k.rds", contains 100'000 SNPs for 3032 genotyped individuals. 
 Contact stefamu@ntnu.no to download it.
 
-## Scripts and Hierarchy
+## Scripts
 
 ### Functions
 - BPCRR.R: perform genomic prediction by BPCRR using a fixed prior on PC variances
