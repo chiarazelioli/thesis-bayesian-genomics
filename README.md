@@ -42,9 +42,11 @@ Here we pursue the main goal, which is to predict anc compare breeding values gi
 
 One can use any of the following three scripts to do so.
 
-- demo_sim.R: demonstration script (credits to janne.c.h.aspheim@ntnu.no) perfect to first understand the workflow. I recommend to give a look to this before using any other script. A user sets each time a seed for reproducibility and a genetic architecture.
+- demo_sim.R: demonstration script (credits to janne.c.h.aspheim@ntnu.no) perfect to first understand the workflow. A user sets each time a seed for reproducibility and a genetic architecture.
 - main.R: optimized script which runs five seeds to simulate five datasets for reliable predictions and creates '.csv' files to store the results so that we may directly plot them for visual inspection.
-- main_all_architectures.R: generalization of 'main.R', performing genomic prediction for all the architectures set at the beginning, simulating five datasets each. May require long time to run.
+- main_all_architectures.R: generalization of 'main.R', performing genomic prediction for all the architectures set at the beginning, simulating five datasets each. May require long time to run. At the end of this script there is an example of plot.
+
+I suggest to start with 'demo_sim.R' for some first attempts. Then rely on 'main.R'. Use 'main_all_architectures.R' only if you want to handle more architectures at once.
 
 #### B1. Workflow overview:
 1) Parameters Setting: User defines the seed for reproducibility and the genetic architecture probabilities
@@ -65,6 +67,7 @@ breeding values are generated as a linear combination of the SNP matrix and effe
 
 
 ### C. Scripts for Robustness Assessment - BPCRR
+These scripts will be public soon:
 - vary_nPCs.R: genomic prediction by BPCRR when choosing different numbers of PCs.
 - increase_prior_var.R: genomic prediction by BPCRR when manually varying the fixed prior variance.
 - ridge_on_PCs.R: perform genomic prediction following a frequentist ridge regression on the PCs used for BPCRR, just as benchmark.
