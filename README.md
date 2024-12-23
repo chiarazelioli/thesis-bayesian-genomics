@@ -43,10 +43,10 @@ Here we pursue the main goal, which is to predict anc compare breeding values gi
 One can use any of the following three scripts to do so.
 
 - demo_sim.R: demonstration script (credits to janne.c.h.aspheim@ntnu.no) perfect to first understand the workflow. A user sets each time a seed for reproducibility and a genetic architecture.
-- main.R: optimized script which runs five seeds to simulate five datasets for reliable predictions and creates '.csv' files to store the results so that we may directly plot them for visual inspection.
-- main_all_architectures.R: generalization of 'main.R', performing genomic prediction for all the architectures set at the beginning, simulating five datasets each. May require long time to run. At the end of this script there is an example of plot.
+- genomic_pred.R: optimized script which runs five seeds to simulate five datasets for reliable predictions and creates '.csv' files to store the results so that we may directly plot them for visual inspection.
+- genomic_pred_architectures.R: generalization of 'genomic_pred.R', performing genomic prediction for all the architectures set at the beginning, simulating five datasets each. May require long time to run. At the end of this script there is an example of plot.
 
-I suggest to start with 'demo_sim.R' for some first attempts. Then rely on 'main.R'. Use 'main_all_architectures.R' only if you want to handle more architectures at once.
+I suggest to start with 'demo_sim.R' for some first attempts. Then rely on 'genomic_pred.R'. Use 'genomic_pred_architectures.R' only if you want to handle more architectures at once.
 
 #### B1. Workflow overview:
 1) Parameters Setting: User defines the seed for reproducibility and the genetic architecture probabilities
@@ -72,5 +72,5 @@ These scripts will be public soon:
 - increase_prior_var.R: genomic prediction by BPCRR when manually varying the fixed prior variance.
 - ridge_on_PCs.R: perform genomic prediction following a frequentist ridge regression on the PCs used for BPCRR, just as benchmark.
 
-**NOTE on PC scaling**: In all the scripts, 'demo_sim.R', 'main.R', 'main_all_pis.R', 'main_accuracy_inspection.R' (UPDATE), when preparing the principal components, one can either scale PCs variances to 1 (standardize), by setting "scale = TRUE" in line 'XX <- scale(XX, center = TRUE, scale = FALSE)', or simply centering them keeping the line as it is, and later scaling them w.r.t. the variance of the first PC.
+**NOTE on PC scaling**: In all the scripts, 'demo_sim.R', 'genomic_pred.R', 'genomic_pred_architectures.R', when preparing the principal components, one can either scale PCs variances to 1 (standardize), by setting "scale = TRUE" in line 'XX <- scale(XX, center = TRUE, scale = FALSE)', or simply centering them keeping the line as it is, and later scaling them w.r.t. the variance of the first PC.
 
